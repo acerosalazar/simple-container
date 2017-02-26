@@ -194,8 +194,7 @@
 				EF234C091E62FA71008C8113 /* SimpleContainer.h */,
 				EF234C0A1E62FA71008C8113 /* Info.plist */,
 			);
-			name = Support;
-			path = Sources;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
