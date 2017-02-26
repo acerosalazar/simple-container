@@ -11,6 +11,15 @@ import XCTest
 
 class SimpleContainerTests: XCTestCase {
     
+    struct Person {
+        let name: String
+    }
+    
+    struct Vehicle {
+        let name: String
+        let driver: Person
+    }
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,15 +31,22 @@ class SimpleContainerTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        
+        let container = ServiceContainer()
+        let driverName = "Tomaš Novak"
+        let vehicleName = "Škoda"
+        
+        container.register(Vehicle.self) { r in
+            return Vehicle(name: vehicleName, driver: r.resolve(Person.self)!)
         }
+        
+        container.register(Person.self) { _ in
+            return Person(name: driverName )
+        }
+        
+        let vehicle = container.resolve(Vehicle.self)!
+        
+        XCTAssert(vehicle.name == vehicleName)
+        XCTAssert(vehicle.driver.name == driverName)
     }
-    
 }

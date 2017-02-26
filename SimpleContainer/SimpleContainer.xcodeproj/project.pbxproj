@@ -27,6 +27,13 @@
 			remoteGlobalIDString = EF234C051E62FA71008C8113;
 			remoteInfo = SimpleContainer;
 		};
+		EF234C671E630584008C8113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF234BFD1E62FA71008C8113 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF234C241E62FABB008C8113;
+			remoteInfo = "SimpleContainer (iOS)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -242,6 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EF234C681E630584008C8113 /* PBXTargetDependency */,
 				EF234C121E62FA71008C8113 /* PBXTargetDependency */,
 			);
 			name = SimpleContainerTests;
@@ -373,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = EF234C051E62FA71008C8113 /* SimpleContainer (macOS) */;
 			targetProxy = EF234C111E62FA71008C8113 /* PBXContainerItemProxy */;
+		};
+		EF234C681E630584008C8113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF234C241E62FABB008C8113 /* SimpleContainer (iOS) */;
+			targetProxy = EF234C671E630584008C8113 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
