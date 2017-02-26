@@ -1,0 +1,12 @@
+//
+//  CommonSources.xcconfig
+//  SimpleContainer
+//
+//  Created by Acero Salazar Felix on 26/02/17.
+//  Copyright © 2017 acerosalazar. All rights reserved.
+//
+
+INFOPLIST_FILE = Sources/Info.plist
+PRODUCT_MODULE_NAME = SimpleContainer
+PRODUCT_NAME = SimpleContainer
+PRODUCT_BUNDLE_IDENTIFIER = com.acerosalazar.SimpleContainer

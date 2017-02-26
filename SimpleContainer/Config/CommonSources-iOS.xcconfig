@@ -1,0 +1,14 @@
+//
+//  Common-iOS.xcconfig
+//  SimpleContainer
+//
+//  Created by Acero Salazar Felix on 26/02/17.
+//  Copyright © 2017 acerosalazar. All rights reserved.
+//
+
+#include "CommonSources.xcconfig"
+
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+SDKROOT = iphoneos
+
+

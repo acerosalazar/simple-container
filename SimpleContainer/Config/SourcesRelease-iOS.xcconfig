@@ -1,0 +1,10 @@
+//
+//  SourcesRelease.xcconfig
+//  SimpleContainer
+//
+//  Created by Acero Salazar Felix on 26/02/17.
+//  Copyright © 2017 acerosalazar. All rights reserved.
+//
+
+#include "CommonSources-iOS.xcconfig"
+#include "CommonRelease.xcconfig"
